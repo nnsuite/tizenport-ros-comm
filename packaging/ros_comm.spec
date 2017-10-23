@@ -451,7 +451,7 @@ Requires:	ros-kinetic-rosconsole
 Requires:	ros-kinetic-roscpp
 Requires:	ros-kinetic-rostime
 Requires:	ros-kinetic-std-msgs
-Requires:	xmlrpcpp
+Requires:	ros-kinetic-xmlrpcpp
 %__ros_in_files tools/topic_tools	topic-tools
 %{__ros_install_path}/lib/python2.7/site-packages/topic_tools*
 %{__ros_install_path}/lib/python2.7/site-packages/topic_tools/*
@@ -459,7 +459,7 @@ Requires:	xmlrpcpp
 %__ros_in_pkg utilities/message_filters	message-filters
 Requires:	ros-kinetic-rosconsole
 Requires:	ros-kinetic-roscpp
-Requires:	ros-kientic-xmlrpcpp
+Requires:	ros-kinetic-xmlrpcpp
 %__ros_in_files utilities/message_filters	message-filters
 %{__ros_install_path}/lib/python2.7/site-packages/message_filters*
 %{__ros_install_path}/lib/python2.7/site-packages/message_filters/*
