@@ -356,7 +356,7 @@ Requires:	python-paramiko
 Requires:	python-rospkg >= 1.0.37
 Requires:	python-yaml
 Requires:	ros-kinetic-rosclean
-Requires:	ros-kinetic-rosgraph0msgs
+Requires:	ros-kinetic-rosgraph-msgs
 Requires:	ros-kinetic-roslib
 Requires:	ros-kinetic-rosmaster >= 1.11.16
 Requires:	ros-kinetic-rosout
