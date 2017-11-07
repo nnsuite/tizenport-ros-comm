@@ -253,6 +253,8 @@ Requires:	ros-kinetic-rosgraph-msgs >= 1.10.3
 Requires:	ros-kinetic-roslib
 Requires:	ros-kinetic-std-msgs
 %__ros_in_files clients/rospy	rospy
+%{__ros_install_path}/lib/python2.7/site-packages/rospy*
+%{__ros_install_path}/lib/python2.7/site-packages/rospy/*
 
 %__ros_in_pkg test/test_rosbag	test-rosbag
 %__ros_in_files test/test_rosbag	test-rosbag
@@ -293,8 +295,6 @@ Requires:	ros-kinetic-rosbuild
 Requires:	ros-kinetic-rosgraph
 Requires:	ros-kinetic-rospy
 %__ros_in_files test/test_rospy	test-rospy
-%{__ros_install_path}/lib/python2.7/site-packages/rospy*
-%{__ros_install_path}/lib/python2.7/site-packages/rospy/*
 %{__ros_install_path}/share/common-lisp/ros/test_rospy/*
 %{__ros_install_path}/share/gennodejs/ros/test_rospy/*
 %{__ros_install_path}/share/roseus/ros/test_rospy/*
