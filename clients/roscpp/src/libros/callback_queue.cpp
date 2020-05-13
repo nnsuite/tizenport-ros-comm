@@ -229,7 +229,7 @@ CallbackQueue::CallOneResult CallbackQueue::callOne(ros::WallDuration timeout)
     {
       if (!timeout.isZero())
       {
-        condition_.timed_wait(lock, boost::posix_time::microseconds(timeout.toSec() * 1000000.0f));
+        condition_.timed_wait(lock, boost::posix_time::microseconds(long(timeout.toSec() * 1000000.0f)));
       }
 
       if (callbacks_.empty())
@@ -305,7 +305,7 @@ void CallbackQueue::callAvailable(ros::WallDuration timeout)
     {
       if (!timeout.isZero())
       {
-        condition_.timed_wait(lock, boost::posix_time::microseconds(timeout.toSec() * 1000000.0f));
+        condition_.timed_wait(lock, boost::posix_time::microseconds(long(timeout.toSec() * 1000000.0f)));
       }
 
       if (callbacks_.empty() || !enabled_)
